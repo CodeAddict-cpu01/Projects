@@ -1,0 +1,64 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffecec;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Main container box */
+  .access-box {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 360px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .access-box h2 {
+    color: #d73232;
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+  
+  /* Description text */
+  .access-box p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field */
+  .access-box input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .access-box button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #d73232;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .access-box button:hover {
+    background-color: #a60000;
+  }
+  

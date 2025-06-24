@@ -1,0 +1,97 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.bloodbank.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Donors Servlet -->
+    <servlet>
+        <servlet-name>ViewDonorsServlet</servlet-name>
+        <servlet-class>com.bloodbank.ViewDonorsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewDonorsServlet</servlet-name>
+        <url-pattern>/view-donors</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>VerifyAdminServlet</servlet-name>
+    <servlet-class>com.bloodbank.VerifyAdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>VerifyAdminServlet</servlet-name>
+    <url-pattern>/verify-admin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AdminRequestReviewServlet</servlet-name>
+    <servlet-class>com.bloodbank.AdminRequestReviewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminRequestReviewServlet</servlet-name>
+    <url-pattern>/review-requests</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RequestAccessServlet</servlet-name>
+    <servlet-class>com.bloodbank.RequestAccessServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RequestAccessServlet</servlet-name>
+    <url-pattern>/request-access</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ApproveRequestServlet</servlet-name>
+    <servlet-class>com.bloodbank.ApproveRequestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ApproveRequestServlet</servlet-name>
+    <url-pattern>/approve-request</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RejectRequestServlet</servlet-name>
+    <servlet-class>com.bloodbank.RejectRequestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RejectRequestServlet</servlet-name>
+    <url-pattern>/reject-request</url-pattern>
+
+<servlet>
+  <servlet-name>CheckBloodServlet</servlet-name>
+  <servlet-class>com.bloodbank.CheckBloodServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>CheckBloodServlet</servlet-name>
+  <url-pattern>/check-blood</url-pattern>
+</servlet-mapping>
+
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>RequestBloodServlet</servlet-name>
+    <servlet-class>com.bloodbank.RequestBloodServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RequestBloodServlet</servlet-name>
+    <url-pattern>/request-blood</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ViewBloodRequestsServlet</servlet-name>
+    <servlet-class>com.bloodbank.ViewBloodRequestsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ViewBloodRequestsServlet</servlet-name>
+    <url-pattern>/view-blood-requests</url-pattern>
+</servlet-mapping>
+
+</web-app>

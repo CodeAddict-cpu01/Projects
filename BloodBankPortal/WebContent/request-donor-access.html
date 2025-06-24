@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Donor List Access</title>
+  <link rel="icon" href="images/Blood_transparent.png">
+  <link rel="stylesheet" href="css/access.css">
+  <style>
+    body {
+      background-color: #ffeaea;
+      font-family: Arial, sans-serif;
+    }
+
+    .access-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px;
+    }
+
+    .access-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .access-box h2 {
+      text-align: center;
+      color: #cc0000;
+      margin-bottom: 20px;
+    }
+
+    .access-box input[type="email"],
+    .access-box input[type="text"],
+    .access-box input[type="tel"],
+    .access-box textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .access-box textarea {
+      resize: vertical;
+    }
+
+    .access-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #d73232;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .access-box button:hover {
+      background-color: #b52b2b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="access-container">
+    <!-- User Request Access Section -->
+    <div class="access-box">
+      <h2>Request Access to Donor List</h2>
+      <form action="request-access" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="reason" rows="6" placeholder="Reason for access" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+
+    <!-- Search Approved Donor -->
+    <div class="access-box">
+      <h2>Already Approved? Search Specific Donor</h2>
+      <form action="view-donors" method="POST">
+        <input type="email" name="email" placeholder="Your Approved Email" required>
+        <input type="text" name="donorName" placeholder="Donor Full Name" required>
+        <input type="tel" name="donorPhone" placeholder="Donor Phone Number" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+        <button type="submit">Search Donor</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

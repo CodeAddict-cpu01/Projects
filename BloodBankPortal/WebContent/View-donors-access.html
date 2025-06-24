@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blood Bank Portal</title>
+  <link rel="icon" href="images/Blood_transparent.png">
+  <link rel="stylesheet" href="css/acces2.css">
+</head>
+<body>
+
+<div class="access-box">
+  <h2>Access Donor List</h2>
+  <p>Are you an admin or a user?</p>
+
+  <!-- Admin Form -->
+  <form action="verify-admin" method="post" style="margin-bottom: 10px;">
+    <input type="text" name="adminId" placeholder="Enter Admin ID if you are Admin" required>
+    <button type="submit">I'm Admin</button>
+  </form>
+
+  <!-- User Button -->
+  <button onclick="redirectUser()">I'm User</button>
+</div>
+
+<script>
+  function redirectUser() {
+    window.location.href = "request-donor-access.html";
+  }
+</script>
+
+</body>
+</html>
